@@ -1,0 +1,18 @@
+{
+  "api": [
+    {
+      "id": "59dde0def94062f06bcc1211",
+      "age": 27,
+      "name": "Gale Sullivan",
+      "gender": "female",
+      "email": "galesullivan@zedalis.com"
+    },
+    {
+      "id": "BQ2U7eu",
+      "age": "4",
+      "name": "a",
+      "email": "a@a.dk",
+      "gender": "a"
+    }
+  ]
+}
