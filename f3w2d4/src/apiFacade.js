@@ -34,16 +34,22 @@ function apiFacade() {
     let options;
     if (person.id == "") {
       options = makeOptions("POST", data);
-      return fetch(URL, options).then(handleHttpErrors);
+      return fetch(URL, options)
+        .then(handleHttpErrors)
+        .catch(err => console.log(err));
     } else {
       options = makeOptions("PUT", data);
-      return fetch(URL + "/" + person.id, options).then(handleHttpErrors);
+      return fetch(URL + "/" + person.id, options)
+        .then(handleHttpErrors)
+        .catch(err => console.log(err));
     }
   }
 
   function deletePerson(id) {
     const options = makeOptions("DELETE");
-    return fetch(URL + "/" + id, options).then(handleHttpErrors);
+    fetch(URL + "/" + id, options)
+      .then(handleHttpErrors)
+      .catch(err => console.log(err));
   }
 
   return {
